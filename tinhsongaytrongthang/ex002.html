@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form >
+  <input type="text" id="inputday" placeholder="nhap so ngay">
+  <button type="button" id="tinh" onclick="nhap()">Tính số ngày</button>
+</form>
+
+<script>
+function nhap(){
+  let a=document.getElementById('inputday').value
+  let A=parseInt(a)
+  switch (A){
+    case 1:
+      document.write("Thang 1 co 31 ngay")
+            console.log('a bang',a)
+      break;
+    case 2:
+      document.write("Tháng 2 có 28 or 29 ngày")
+      break;
+    case 3:
+      document.write("Tháng 3 có 31 ngày")
+      break;
+    case 4:
+      document.write("Tháng 4 có 30 ngày")
+      break;
+  }
+}
+</script>
+</body>
+</html>
